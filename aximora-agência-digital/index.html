@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aximora | Agência de Crescimento Digital</title>
+  <meta name="description" content="Aximora é uma agência digital focada em entregar inovação pragmática e crescimento mensurável através de estratégias personalizadas em SEO, desenvolvimento e data analytics.">
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="Aximora | Agência de Crescimento Digital">
+  <meta property="og:description" content="Aximora é uma agência digital focada em entregar inovação pragmática e crescimento mensurável através de estratégias personalizadas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aximora.example.com">
+  <meta property="og:image" content="https://picsum.photos/1200/630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aximora | Agência de Crescimento Digital">
+  <meta name="twitter:description" content="Aximora é uma agência digital focada em entregar inovação pragmática e crescimento mensurável.">
+  <meta name="twitter:image" content="https://picsum.photos/1200/630">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'ax-dark': '#0E0F12',
+            'ax-light': '#E6E7EB',
+            'ax-sub': '#8B8F9C',
+            'ax-primary': '#6EE7F2',
+            'ax-accent': '#A78BFA',
+            'ax-border': '#1A1C21',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            spline: ['Spline Sans', 'sans-serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            'subtle-pulse': 'subtlePulse 2.5s infinite ease-in-out',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            subtlePulse: {
+              '0%, 100%': { boxShadow: '0 0 0 0 rgba(110, 231, 242, 0.2)' },
+              '50%': { boxShadow: '0 0 0 10px rgba(110, 231, 242, 0)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-ax-dark text-ax-light font-sans antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
